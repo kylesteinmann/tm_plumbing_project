@@ -1,0 +1,425 @@
+﻿{% load static %}
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <title>T&M Plumbing and Pumping Services</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="ThemeZaa">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="description"
+        content="Elevate your online presence with Crafto - a modern, versatile, multipurpose Bootstrap 5 responsive HTML5, SCSS template using highly creative 52+ ready demos.">
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="{% static 'images/TMLogo.png' %}">
+    <link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon-57x57.png' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'images/apple-touch-icon-72x72.png' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'images/apple-touch-icon-114x114.png' %}">
+    <!-- google fonts preconnect -->
+    <link rel="preconnect" href="{% static 'https://fonts.googleapis.com' %}" crossorigin>
+    <link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}" crossorigin>
+    <!-- style sheets and font icons -->
+    <link rel="stylesheet" href="{% static 'css/vendors.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/icon.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+</head>
+
+<body data-mobile-nav-style="classic">
+    <!-- start header -->
+    <header>
+        <!-- start navigation -->
+        <nav class="navbar navbar-expand-lg bg- header-reverse" data-header-hover="light">
+            <div class="container-fluid">
+                <div class="col-auto col-xxl-3 col-lg-2 me-lg-0 me-auto">
+                    <a class="navbar-brand" href="{% url 'base:home' %}">
+                        <img src="{% static 'images/tmlogo and name - white.png'%}"
+                            data-at2x="{% static 'images/TMLogo and Name white.png'%}" alt="" class="default-logo">
+                        <img src="{% static 'tmlogo and name - white.png'%}"
+                            data-at2x="{% static 'images/TMLogo and Name.png'%}" alt="" class="alt-logo">
+                        <img src="{% static 'images/tmlogo and name - white.png'%}"
+                            data-at2x="{% static 'images/TMLogo and Name.png'%}" alt="" class="mobile-logo">
+                    </a>
+                </div>
+
+                <div class="col-auto col-xxl-3 col-lg-2 text-end d-none d-sm-flex">
+                    <div class="header-icon">
+                        <div class="d-none d-xxl-inline-block me-25px xxl-me-10px">
+                            <div class="alt-font fs-15 xl-fs-13 widget-text fw-500"><span
+                                    class="w-35px h-35px bg-base-color d-inline-block lh-36 me-10px border-radius-100px"><i
+                                        class="feather icon-feather-phone me-10px"></i></span><a href="tel:15737836225"
+                                    class="widget-text text-white-hover">573.783.6225</a></div>
+                        </div>
+                        <div class="header-button"><a href="{% url 'base:home' %}"
+                                class="btn btn-very-small btn-transparent-white-light btn-rounded">Contact Us</a></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- end navigation -->
+    </header>
+    <!-- end header -->
+    <!-- start section -->
+    <section class="section-dark p-0 bg-dark-gray" style="background-image:url('{% static 'images/red_pipes.png' %}');">
+        <div class="swiper lg-no-parallax  full-screen md-h-600px sm-h-500px ipad-top-space-margin swiper-light-pagination"
+            data-slider-options='{ "slidesPerView": 1, "loop": true, "parallax": true, "speed": 1000, "pagination": { "el": ".swiper-pagination-bullets", "clickable": true }, "navigation": { "nextEl": ".slider-one-slide-next-1", "prevEl": ".slider-one-slide-prev-1" }, "autoplay": { "delay": 6000, "disableOnInteraction": false },  "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'>
+            <div class="swiper-wrapper">
+                <!-- start slider item -->
+                <div class="swiper-slide overflow-hidden">
+                    <div class="cover-background position-absolute top-0 start-0 w-100 h-100"
+                        data-swiper-parallax="500">
+                        <div class="opacity-light bg-gradient-sherpa-blue-black"></div>
+                        <div class="container h-100" data-swiper-parallax="-500">
+                            <div class="row align-items-center h-100">
+                                <div class="col-xl-7 col-lg-8 col-md-10 position-relative text-white text-center text-md-start"
+                                    data-anime='{ "el": "childs", "translateX": [100, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                                    <div>
+                                        <span class="fs-20 opacity-6 mb-25px sm-mb-15px d-inline-block fw-300">Plumbing
+                                            Services</span>
+                                    </div>
+                                    <div class=" d-flex flex-row justify-content-between align-items-center">
+                                        <div>
+                                            <h5 class="alt-font ">Water and Swere Lines</h5>
+                                            <h5 class="alt-font ">Drain Cleaning</h5>
+                                            <h5 class="alt-font ">Water Heaters</h5>
+                                            <h5 class="alt-font ">Camera Inspections</h5>
+                                        </div>
+                                        <div>
+                                            <h5 class="alt-font ">Hydrants</h5>
+                                            <h5 class="alt-font ">Pumps</h5>
+                                            <h5 class="alt-font ">Fixture Installation</h5>
+                                            <h5 class="alt-font ">Frozen Pipes</h5>
+                                        </div>
+                                    </div>
+                                    <a href="{% url 'base:home' %}" target="_blank"
+                                        class="btn btn-extra-large btn-rounded with-rounded btn-base-color btn-box-shadow box-shadow-extra-large mt-20px sm-mt-0">Contact
+                                        Us Today!<span class="bg-white text-base-color"><i
+                                                class="fas fa-arrow-right"></i></span></a>
+                                </div>
+                            </div>
+                            <div class="position-absolute bottom-minus-45px"
+                                data-anime='{ "translateY": [150, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end slider item -->
+                <!-- start slider item -->
+                <div class="swiper-slide overflow-hidden">
+                    <div class="cover-background position-absolute top-0 start-0 w-100 h-100" data-swiper-parallax="500"
+                        style="background-image:url('https://via.placeholder.com/1920x1100');">
+                        <div class="opacity-light bg-gradient-sherpa-blue-black"></div>
+                        <div class="container h-100" data-swiper-parallax="-500">
+                            <div class="row align-items-center h-100">
+                                <div class="col-xl-7 col-lg-8 col-md-10 position-relative text-white text-center text-md-start"
+                                    data-anime='{ "el": "childs", "translateX": [100, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                                    <div>
+                                        <span class="fs-20 opacity-6 mb-25px sm-mb-15px d-inline-block fw-300">Septic
+                                            and Sewage Services</span>
+                                    </div>
+                                    <div class=" d-flex flex-row justify-content-between align-items-center">
+                                        <div>
+                                            <h5 class="alt-font ">Regular Septic Maintenance and Pumping</h5>
+                                            <h5 class="alt-font ">Tank Installation and Replacement</h5>
+                                            <h5 class="alt-font ">Drain Field Repair</h5>
+                                            <h5 class="alt-font ">Inspections</h5>
+                                        </div>
+                                    </div>
+                                    <a href="{% url 'base:home' %}" target="_blank"
+                                        class="btn btn-extra-large btn-rounded with-rounded btn-base-color btn-box-shadow box-shadow-extra-large mt-20px sm-mt-0">Contact
+                                        Us Today!<span class="bg-white text-base-color"><i
+                                                class="fa-solid fa-arrow-right"></i></span></a>
+                                </div>
+                                <div class="position-absolute bottom-minus-45px"
+                                    data-anime='{ "translateY": [150, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- start slider pagination -->
+            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+            <!-- end slider pagination -->
+            <!-- start slider navigation -->
+            <!--<div class="slider-one-slide-prev-1 icon-extra-large text-white swiper-button-prev slider-navigation-style-06 d-none d-sm-inline-block"><i class="line-icon-Arrow-OutLeft"></i></div>
+                    <div class="slider-one-slide-next-1 icon-extra-large text-white swiper-button-next slider-navigation-style-06 d-none d-sm-inline-block"><i class="line-icon-Arrow-OutRight"></i></div>-->
+            <!-- end slider navigation -->
+        </div>
+    </section>
+    <!-- end section -->
+    <!-- start section -->
+    <section class="border-bottom border-color-extra-medium-gray pt-40px pb-40px overflow-hidden">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 justify-content-center align-items-center"
+                data-anime='{ "el": "childs", "translateX": [-15, 0], "translateY": [15, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'>
+                <!-- start features box item -->
+                <!-- 24 Hour Service -->
+                <div class="col icon-with-text-style-08 md-mb-30px text-center text-sm-start">
+                    <div class="feature-box feature-box-left-icon-middle d-inline-flex align-middle">
+                        <div class="feature-box-icon me-10px">
+                            <i class="bi bi-clock icon-very-medium text-base-color"></i>
+                        </div>
+                        <div class="feature-box-content">
+                            <span class="alt-font fw-500 text-dark-gray d-block lh-26">24 Hour Service</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Licensed -->
+                <div class="col icon-with-text-style-08 md-mb-30px text-center text-sm-start">
+                    <div class="feature-box feature-box-left-icon-middle d-inline-flex align-middle">
+                        <div class="feature-box-icon me-10px">
+                            <i class="bi bi-patch-check icon-very-medium text-base-color"></i>
+                        </div>
+                        <div class="feature-box-content">
+                            <span class="alt-font fw-500 text-dark-gray d-block lh-26">Licensed</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bonded -->
+                <div class="col icon-with-text-style-08 xs-mb-30px text-center text-sm-start">
+                    <div class="feature-box feature-box-left-icon-middle d-inline-flex align-middle">
+                        <div class="feature-box-icon me-10px">
+                            <!-- Using bi-link-45deg as an alternative to bi-handshake -->
+                            <i class="bi bi-link-45deg icon-very-medium text-base-color"></i>
+                        </div>
+                        <div class="feature-box-content">
+                            <span class="alt-font fw-500 text-dark-gray d-block lh-26">Bonded</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Insured -->
+                <div class="col icon-with-text-style-08 text-center text-sm-start">
+                    <div class="feature-box feature-box-left-icon-middle d-inline-flex align-middle">
+                        <div class="feature-box-icon me-10px">
+                            <i class="bi bi-shield-check icon-very-medium text-base-color"></i>
+                        </div>
+                        <div class="feature-box-content">
+                            <span class="alt-font fw-500 text-dark-gray d-block lh-26">Insured</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- end features box item -->
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+    <!-- start section -->
+    <section class="pb-8 md-pb-17 xs-pb-28">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-xl-5 col-lg-6 col-md-9 md-mb-50px text-center text-lg-start"
+                    data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                    <span
+                        class="bg-solitude-blue text-uppercase fs-13 ps-25px pe-25px alt-font fw-600 text-base-color lh-40 sm-lh-55 border-radius-100px d-inline-block mb-25px">About
+                        Us</span>
+
+                    <p> Serving Madison, St. Francois, Wayne, Iron, and surrounding counties, T&M Plumbing and Pumping
+                        Services offers
+                        comprehensive plumbing and well pump solutions for residential, commercial, and agricultural
+                        needs. Our experienced
+                        team specializes in new construction plumbing, precise trenching, high-pressure sewer jetting,
+                        thorough drain
+                        cleaning, advanced camera inspections, meticulous repair work, and efficient agricultural
+                        watering systems. We are
+                        committed to delivering quality workmanship and reliable service, ensuring that every project is
+                        completed with the
+                        utmost attention to detail. </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+    <!-- start section -->
+
+
+    <!-- start section -->
+
+    <!-- end section -->
+    <!-- start section -->
+    <section class="bg-gradient-solitude-blue-transparent pt-0">
+        <div class="container">
+            <div class="row justify-content-center align-items-center"
+                data-anime='{ "el": "childs", "translateX": [0, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'>
+
+
+            </div>
+            <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center mt-4 sm-mt-40px"
+                data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                <!-- start testimonials item -->
+
+                <!-- end testimonials item -->
+                <!-- start testimonials item -->
+                <div class="col testimonials-style-01 md-mb-30px">
+                    <div
+                        class="position-relative bg-white testimonial-arrow ps-50px pe-50px pt-30px pb-30px lg-p-30px border-radius-10px box-shadow-quadruple-large">
+                        <span>OMG!!! Eli fixed our water to our home and what a blessing! He came as soon as we
+                            contacted him!</span>
+                    </div>
+                    <div class="mt-10px pt-20px pb-20px ps-15px pe-15px">
+                        <img src="https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-1/484847591_1291581191900119_3239286942543711545_n.jpg?stp=cp0_dst-jpg_s40x40_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e99d92&_nc_ohc=FIvzFhFE4uMQ7kNvwHZsclO&_nc_oc=AdlWJT7gVR51vwvM_4xLzmJ0sqE3THevYGvhH014fmrFuAnstmjb6Um9fK4cEWllbc8&_nc_zt=24&_nc_ht=scontent-ord5-1.xx&_nc_gid=5vAEH5juA1aYqWLAaWLRXA&oh=00_AfFVrFNYDl8fAiwWORGYfBGYLX9jfY0rx2Gg4Ffh7yElQQ&oe=67F77D04"
+                            class="w-80px h-80px rounded-circle me-15px" alt="" />
+                        <div class="d-inline-block align-middle lh-20">
+                            <div class="fw-500 text-dark-gray alt-font mb-5px">Debbie S.</div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end testimonials item -->
+                <!-- start testimonials item -->
+                <div class="col testimonials-style-01">
+                    <div
+                        class="position-relative bg-white testimonial-arrow ps-50px pe-50px pt-30px pb-30px lg-p-30px border-radius-10px box-shadow-quadruple-large">
+                        <span>Highly recommend! They were fast and friendly, taking care of our issue same-day even when
+                            it required two visits to
+                            replace a part.
+                        </span>
+                    </div>
+                    <div class="mt-10px pt-20px pb-20px ps-15px pe-15px">
+                        <img src="https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-1/458383946_10225276726042296_8957922650379873850_n.jpg?stp=cp6_dst-jpg_s40x40_tt6&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=kblUfkHE0tAQ7kNvwHax2D4&_nc_oc=AdnQub2RKxVnZf3fIIQqjF-5HzMgigwCCTHIbDl9P8zVrC-Pa4dUomp7jLAMQ01zeoo&_nc_zt=24&_nc_ht=scontent-ord5-2.xx&_nc_gid=eetpQKMKSU_azOyPr1Vjww&oh=00_AfF9Gc-pHVRrgVQcqFVQEtW9Ek5EY5J9Hq5t7COGhvDrBg&oe=67F7833F"
+                            class="w-80px h-80px rounded-circle me-15px" alt="" />
+                        <div class="d-inline-block align-middle lh-20">
+                            <div class="fw-500 text-dark-gray alt-font mb-5px">Amy S.</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col testimonials-style-01 md-mb-30px">
+                    <div
+                        class="position-relative bg-white testimonial-arrow ps-50px pe-50px pt-30px pb-30px lg-p-30px border-radius-10px box-shadow-quadruple-large">
+                        <span>Helped us on a Sunday to get our water back on! Very reasonably priced, knowledgeable, and
+                            good
+                            communication! So thankful to have found them.</span>
+                    </div>
+                    <div class="mt-10px pt-20px pb-20px ps-15px pe-15px">
+                        <img src="https://scontent-ord5-3.xx.fbcdn.net/v/t39.30808-1/462893556_10233487273542160_9025219196321796686_n.jpg?stp=cp0_dst-jpg_s40x40_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=D49oBRhc6AMQ7kNvwGpa67w&_nc_oc=AdkgQ2bsMQNiTeSjr8799VgYkoNExbw6Yl8bbaHOVkP9qKcBZ5rK1nKFZtUa9OpG0p4&_nc_zt=24&_nc_ht=scontent-ord5-3.xx&_nc_gid=c79wWo7bugQtJVGAcmpTmg&oh=00_AfFZ-Rrfx7WDmH3rT4Brdhp9BeJnQXdMim6eG__n4YDSKg&oe=67F77FC1"
+                            class="w-80px h-80px rounded-circle me-15px" alt="" />
+                        <div class="d-inline-block align-middle lh-20">
+                            <div class="fw-500 text-dark-gray alt-font mb-5px">Isaac K.</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col testimonials-style-01 md-mb-30px">
+                    <div
+                        class="position-relative bg-white testimonial-arrow ps-50px pe-50px pt-30px pb-30px lg-p-30px border-radius-10px box-shadow-quadruple-large">
+                        <span>We called and they had our repair finished and cleaned up faster that most plumbers even
+                            return your call.
+                            Fast,polite,clean,and very reasonably priced. Will call them for our next plumbing
+                            problem.Most definitely recommend
+                            them to anyone.</span>
+                    </div>
+                    <div class="mt-10px pt-20px pb-20px ps-15px pe-15px">
+                        <img src="https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-1/463435823_3342448352552794_1321599214563770033_n.jpg?stp=cp0_dst-jpg_s40x40_tt6&_nc_cat=102&ccb=1-7&_nc_sid=e99d92&_nc_ohc=bk5_e1GMtVQQ7kNvwFqWHU-&_nc_oc=Adkf6UViK_rlPgKvqQp10GMKJ_7HRD4JGacl7dhRrriSQJpgIHJwfM6FMFxu6-EnIJY&_nc_zt=24&_nc_ht=scontent-ord5-2.xx&_nc_gid=c79wWo7bugQtJVGAcmpTmg&oh=00_AfFKhW1gLGA64G6M0D5nl944-Em-EdKqe3PZcQMvoMfKGQ&oe=67F77ECB"
+                            class="w-80px h-80px rounded-circle me-15px" alt="" />
+                        <div class="d-inline-block align-middle lh-20">
+                            <div class="fw-500 text-dark-gray alt-font mb-5px">Jeff L.</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col testimonials-style-01 md-mb-30px">
+                    <div
+                        class="position-relative bg-white testimonial-arrow ps-50px pe-50px pt-30px pb-30px lg-p-30px border-radius-10px box-shadow-quadruple-large">
+                        <span>Helped us on a Sunday to get our water back on! Very reasonably priced, knowledgeable, and
+                            good communication! So
+                            thankful to have found them.</span>
+                    </div>
+                    <div class="mt-10px pt-20px pb-20px ps-15px pe-15px">
+                        <img src="https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-1/473582741_10162448177570667_7300027867103933436_n.jpg?stp=cp0_dst-jpg_s40x40_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e99d92&_nc_ohc=kPaFpJGyRNQQ7kNvwGGo-K1&_nc_oc=AdkPPECNWZh2n_bL5X0D9XJW4KXHywhZTnApIh8WzFi39dYBkS7m2KK07KBrIsDf9GY&_nc_zt=24&_nc_ht=scontent-ord5-1.xx&_nc_gid=c79wWo7bugQtJVGAcmpTmg&oh=00_AfFwcEoqMFLUZDY0LnxwWcrwPCd3M1vSrJih8ypbXvkhsw&oe=67F779F0"
+                            class="w-80px h-80px rounded-circle me-15px" alt="" />
+                        <div class="d-inline-block align-middle lh-20">
+                            <div class="fw-500 text-dark-gray alt-font mb-5px">Erika J.</div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col testimonials-style-01 md-mb-30px">
+                    <div
+                        class="position-relative bg-white testimonial-arrow ps-50px pe-50px pt-30px pb-30px lg-p-30px border-radius-10px box-shadow-quadruple-large">
+                        <span>Eli and Eric saved our girls weekend!! We showed up to our cabin and it was a disaster of
+                            leaky pipes and frozen
+                            non-working toilets. They came out on a Friday and quickly fixed everything. They were
+                            friendly, helpful, efficient and
+                            reasonably priced. Highly recommend!!</span>
+                    </div>
+                    <div class="mt-10px pt-20px pb-20px ps-15px pe-15px">
+                        <img src="https://scontent-ord5-3.xx.fbcdn.net/v/t39.30808-1/466130550_10160678071577914_4824976347067776876_n.jpg?stp=cp6_dst-jpg_s40x40_tt6&_nc_cat=107&ccb=1-7&_nc_sid=e99d92&_nc_ohc=aGfzeRJ4snYQ7kNvwExqABZ&_nc_oc=Adk7D-K0WJJQbvZ5RQWHR0CB-GrZs5xhNuRyaRLCTanQ6xhzdmV9JAtlz-N5JsO00no&_nc_zt=24&_nc_ht=scontent-ord5-3.xx&_nc_gid=5vAEH5juA1aYqWLAaWLRXA&oh=00_AfHi4AJxLvJhvGgpKYlIvhw6N0xXrewS1tWtFfGaCzbyKg&oe=67F776CA"
+                            class="w-80px h-80px rounded-circle me-15px" alt="" />
+                        <div class="d-inline-block align-middle lh-20">
+                            <div class="fw-500 text-dark-gray alt-font mb-5px">Kristen E.</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end testimonials item -->
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+
+    <!-- start section -->
+
+    <!-- end section -->
+
+    <!-- start footer -->
+    <footer class="pt-5 pb-5 sm-pt-40px sm-pb-45px footer-dark bg-extra-medium-slate-blue">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- start footer column -->
+                <div
+                    class="col-lg-3 col-sm-6 last-paragraph-no-margin order-5 order-sm-4 order-lg-1 text-center text-sm-start">
+                    <a href="{% url 'base:home' %}" class="footer-logo mb-15px d-block d-lg-inline-block"><img
+                            src="{% static 'images/TMLogo and Name.png'%}"
+                            data-at2x="{% static 'images/TMLogo and Name.png'%}" alt=""></a>
+                    <p class="w-90 sm-w-100 d-inline-block mb-15px">Licensed plumbing, septic, and well pump company
+                        providing quality service since 2017.</p>
+
+                </div>
+
+                <div class="col-5 col-lg-2 col-sm-4 md-mb-50px sm-mb-30px order-3 order-lg-4">
+                    <span class="alt-font d-block text-white mb-5px">Social connect</span>
+                    <ul>
+                        <li><a href="https://www.facebook.com/TMplumbingllc" target="_blank">Facebook</a></li>
+
+                        <li><a href="https://g.co/kgs/ve3cU3J" target="_blank">Google</a></li>
+
+                    </ul>
+                </div>
+                <!-- end footer column -->
+                <!-- start footer column -->
+                <div class="col-7 col-lg-3 col-sm-6 xs-mb-30px last-paragraph-no-margin order-4 order-sm-5 order-lg-5">
+                    <span class="alt-font d-block text-white mb-5px">Get in touch</span>
+                    <div><i class="feather icon-feather-phone-call icon-very-small text-white me-10px"></i><a
+                            href="tel:12345678910" class="text-white">573.783.6225</a></div>
+                    <div><i class="feather icon-feather-mail icon-very-small text-white me-10px"></i><a
+                            href="mailto:info@tmplumbing.com  "
+                            class="text-white text-decoration-line-bottom">info@tmplumbing.com</a></div>
+                </div>
+                <!-- end footer column -->
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <!-- start sticky column -->
+
+    <!-- end sticky column -->
+    <!-- start scroll progress -->
+    <div class="scroll-progress d-none d-xxl-block">
+        <a href="#" class="scroll-top" aria-label="scroll">
+            <span class="scroll-text">Scroll</span><span class="scroll-line"><span class="scroll-point"></span></span>
+        </a>
+    </div>
+    <!-- end scroll progress -->
+    <!-- javascript libraries -->
+    <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/vendors.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
