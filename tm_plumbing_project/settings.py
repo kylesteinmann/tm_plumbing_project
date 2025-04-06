@@ -125,7 +125,7 @@ STATICFILES_DIRS = [
 ]
 
 # Where collected static files end up after running `collectstatic`
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = BASE_DIR / 'static'
 
 # Use WhiteNoise to serve static files in production
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
