@@ -34,12 +34,12 @@
             <div class="container-fluid">
                 <div class="col-auto col-xxl-3 col-lg-2 me-lg-0 me-auto">
                     <a class="navbar-brand" href="{% url 'base:home' %}">
-                        <img src="{% static 'images/TMLogo and Name.png'%}"
-                            data-at2x="{% static 'images/TMLogo and Name white.png'%}" alt="" class="default-logo">
-                        <img src="{% static 'images/TMLogo and Name.png'%}"
-                            data-at2x="{% static 'images/TMLogo and Name white.png'%}" alt="" class="alt-logo">
-                        <img src="{% static 'images/TMLogo and Name.png'%}"
-                            data-at2x="{% static 'images/TMLogo and Name white.png'%}" alt="" class="mobile-logo">
+                        <img src="{% static 'images/TMLogoandName.png'%}"
+                            data-at2x="{% static 'images/TMLogoandName.png'%}" alt="" class="alt-logo">
+                        <img src="{% static 'images/TMLogoandNameWhite.png'%}"
+                            data-at2x="{% static 'images/TMLogoandNameWhite.png'%}" alt="" class="default-logo">
+                        <img src="{% static 'images/TMLogoandNameWhite.png'%}"
+                            data-at2x="{% static 'images/TMLogoandName.png'%}" alt="" class="mobile-logo">
                     </a>
                 </div>
 
@@ -61,7 +61,13 @@
     </header>
     <!-- end header -->
     <!-- start section -->
-    <section class="section-dark p-0 bg-dark-gray" style="background-image:url('{% static 'images/red_pipes.png' %}')">
+    <section class="section-dark p-0 bg-dark-gray" style="
+        background-image: url('{% static 'images/red_pipes.png' %}');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+    ">
         <div class="swiper lg-no-parallax  full-screen md-h-600px sm-h-500px ipad-top-space-margin swiper-light-pagination"
             data-slider-options='{ "slidesPerView": 1, "loop": true, "parallax": true, "speed": 1000, "pagination": { "el": ".swiper-pagination-bullets", "clickable": true }, "navigation": { "nextEl": ".slider-one-slide-next-1", "prevEl": ".slider-one-slide-prev-1" }, "autoplay": { "delay": 6000, "disableOnInteraction": false },  "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'>
             <div class="swiper-wrapper">
